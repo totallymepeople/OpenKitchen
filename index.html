@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>W6: Quick Chicken Tikka Masala</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+	  padding-top: 100px;
+    }
+	
+    .main-layout {
+	  display: flex;
+	  gap: 40px;
+	  margin: 40px 60px;
+	}
+
+    #header_main_image{
+      background-color: #2C2C2F;
+      text-align: center;
+      padding: 30px 20px;
+      color: white;
+    }
+	
+	.site_header {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 70px;
+	  background-color: #2C2C2F;
+	  color: white;
+	  display: flex;
+	  align-items: center;
+	  padding: 25px;
+	  z-index: 10000;
+	}
+
+    .language-switch a {
+	  margin-right: 10px;
+	  text-decoration: none;
+	  color: white;
+	  background: #2C2C2F;
+	  padding: 6px 12px;
+	  border-radius: 6px;
+	}
+
+    .language-dropdown {
+	  position: relative;
+	  display: inline-block;
+	  margin-left: auto;
+	  margin-right: 20%;
+	}
+
+	.lang-btn {
+	  background: #2C2C2F;
+	  color: white;
+	  font-size: 20px;
+	  border: none;
+	  padding: 8px 14px;
+	  border-radius: 6px;
+	  cursor: pointer;
+	}
+
+	.language-options {
+	  display: none;
+	  position: absolute;
+	  top: 100%;
+	  left: 0;
+	  background: #2C2C2F;
+	  border-radius: 6px;
+	  overflow: hidden;
+	  min-width: 120px;
+	  z-index: 1000;
+	}
+
+	.language-options a {
+	  display: block;
+	  padding: 8px 14px;
+	  color: white;
+	  text-decoration: none;
+	}
+
+	.language-options a:hover {
+	  background: #2C2C2F;
+	}
+
+	.language-dropdown:hover .language-options {
+	  display: block;
+	}
+	 
+    #header_logo{
+      background-color: #2C2C2F;
+      position: absolute;
+	  left: 15%;
+	  color: white;
+    }
+
+	#navigation {
+	  width: 26%;
+	  border: 2px solid #2C2C2F;
+	  padding: 20px;
+	  border-radius: 8px;
+  	  background: #ffffff;
+	}
+
+    #navigation h2 {
+      margin-top: 0;
+    }
+	
+	.header_2 {
+	  padding: 5px 0px;
+	}
+    .checklist {
+      list-style: none;
+      padding-left: 15px;
+    }
+
+    .checklist li {
+      margin: 16px 0;
+    }
+
+    .checklist input {
+      margin-right: 10px;
+	  }
+
+
+	#section {
+	  flex: 1;
+	}
+
+    #section h3 {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    #section ol {
+      padding-left: 20px;
+    }
+
+    #section ol li {
+      margin-bottom: 20px;
+      line-height: 1.6;
+	  border: 1px solid #CBCBCB;
+	  padding: 20px 15px;
+	  border-radius: 6px;
+	  width: fit-content;
+    }
+	
+	.tip {
+	  font-size: 15px;
+	  font-style: italic;
+	  color: #828181;
+	  margin: 0;
+	}
+
+	.tip-box {
+	  border: 2px solid #CBCBCB;
+	  padding: 10px 15px;
+	  border-radius: 8px;
+	  margin-bottom: 25px;
+	  width: fit-content;
+	}
+	
+    #footer {
+      background: #2C2C2F;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 60px;
+	}
+  </style>
+</head>
+<body>
+<header class="site_header">
+<div class="language-dropdown">
+  <button class="lang-btn">Language ▾</button>
+  <div class="language-options">
+    <a href="index.html">English</a>
+    <a href="W6_Ελληνικά.html">Ελληνικά</a>
+  </div>
+</div>
+<div id="header_logo">
+<img src="OpenKitchen Logo.png" alt="OpenKitchen" width="100">
+</div>
+</header>
+  <div id="header_main_image">
+    <img src="Quick Chicken Tikka Masala.jpg" alt="Akis' Chicken Tikka Masala" width="840">
+    <h1 style="font-size: 50px">Quick Chicken Tikka Masala recipe</h1>
+    <h2>By: Akis</h2>
+  </div>
+  
+<div class="main-layout">
+
+<div id="navigation">
+<h2 class="header_2">Ingredients</h2>
+	<div class="tip-box">
+	<p class="tip">
+	<strong>Tip:</strong>Check off the ingredients you have used in the recipe
+	</p>
+	</div>
+    <ul class="checklist">
+      <li><label><input type="checkbox">1 onion</label></li>
+      <li><label><input type="checkbox">200g chicken</label></li>
+      <li><label><input type="checkbox">1/4 bunch parsley</label></li>
+      <li><label><input type="checkbox">1 tablespoon olive oil</label></li>
+      <li><label><input type="checkbox">400g canned tomatoes</label></li>
+      <li><label><input type="checkbox">1/4 teaspoon turmeric</label></li>
+      <li><label><input type="checkbox">1/2 teaspoon curry</label></li>
+      <li><label><input type="checkbox">salt</label></li>
+      <li><label><input type="checkbox">pepper</label></li>
+      <li><label><input type="checkbox">2 tablespoons strained yogurt</label></li>
+    </ul>
+    <h2 class="header_2">To serve</h2>
+    <ul class="checklist">
+      <li><label><input type="checkbox">200g basmati rice, boiled</label></li>
+      <li><label><input type="checkbox">100g strained yogurt</label></li>
+      <li><label><input type="checkbox">2 tablespoons parsley, finely chopped</label></li>
+    </ul>
+  </div>
+
+  <div id="section">
+    <h2 class="header_2">Step by step instructions</h2>
+	<div class="tip-box">
+	<p class="tip">
+	<strong>Tip:</strong>While you are cooking, check off the steps you complete and follow the recipe without getting lost.
+	</p>
+	</div>
+    <ol class="checklist">
+      <li><label><input type="checkbox">Cut the onion into slices and the cooked chicken into 2 cm cubes. Finely chop the parsley and set it aside.</label></li>
+      <li><label><input type="checkbox">Heat the olive oil in a frying pan over medium heat.</label></li>
+      <li><label><input type="checkbox">Sauté the chopped onion for 2 minutes, until it softens a little. Add the chicken and mix.</label></li>
+      <li><label><input type="checkbox">Add the canned tomatoes, turmeric, curry, salt, and pepper.</label></li>
+      <li><label><input type="checkbox">Stir and let it come to a boil.</label></li>
+      <li><label><input type="checkbox">Remove from heat, add yogurt and parsley, then mix.</label></li>
+      <li><label><input type="checkbox">Check seasoning.</label></li>
+      <li><label><input type="checkbox">Serve warm.</label></li>
+    </ol>
+  </div>
+</div>
+<div id="footer">
+<img src="OpenKitchen.png" class="logo-icon">
+</div>
+  
+</body>
+</html>
